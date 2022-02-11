@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calculadora</title>
+
+    
+    <!-- Imortando o CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Cabeçlho -->
+    <header>
+      <h1>Calculadora Web</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- Caixa da calculadora -->
+      <div class="box-calculadora">
+        <!-- Visor da calculadora -->
+        <textarea name="visor" id="visor" rows="1" column="3"""></textarea>
+
+        <!-- Primeira linha com a tecla AC -->
+        <div>
+          <button class="btn especial" id="limpar" onclick="limpar()">AC</button>
+        </div>
+        
+        <!-- Segunda linha de tecla -->
+        <div>
+          <button class="btn" id="teclaSete" onclick="teclasAcionadas(7)">7</button>
+          <button class="btn" id="teclaOito" onclick="teclasAcionadas(8)">8</button>
+          <button class="btn" id="teclaNove" onclick="teclasAcionadas(9)">9</button>
+          <button class="btn" id="opDividir" onclick="teclasAcionadas('/')">&divide;</button>
+        </div>
+
+        <!-- terceira linha de teclass -->
+        <div>
+          <button class="btn" id="teclaQuatro" onclick="teclasAcionadas(4)">4</button>
+          <button class="btn" id="teclaCionco" onclick="teclasAcionadas(5)">5</button>
+          <button class="btn" id="teclaSeis" onclick="teclasAcionadas(6)">6</button>
+          <button class="btn" id="opVezes" onclick="teclasAcionadas('*')">x</button>
+        </div>
+
+        <!-- quarta linha de teclas -->
+        <div>
+          <button class="btn" id="teclaUm" onclick="teclasAcionadas(1)">1</button>
+          <button class="btn" id="teclaDois"" onclick="teclasAcionadas(2)">2</button>
+          <button class="btn" id="teclaTres" onclick="teclasAcionadas(3)">3</button>
+          <button class="btn" id="opMenos" onclick="teclasAcionadas('-')">-</button>
+        </div>
+
+        <!-- Quinta linha de teclas -->
+        <div>
+          <button class="btn" id="teclaZero" onclick="teclasAcionadas(0)">0</button>
+          <button class="btn especial" id="opDelete" onclick="apagar()"><img src="/assets/icons/backspace_white_24dp (1).svg" alt=""></button>
+          <button class="btn" id="opIgual" onclick="confirmar()">=</button>
+          <button class="btn" id="opMais"  onclick="teclasAcionadas('+')">+</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="social-media">
+        <a href="https://github.com/patrick-engelmann"><img src="/assets/icons/github.png" alt="Ícone do GitHub"></a>
+        <a href="https://www.linkedin.com/in/patrick-vieira-da-silva-engelmann-b75b93207/"><img src="assets/icons/linkedin.png" alt="Ícone do Linkedin"></a>
+      </div>
+    </footer>
+
+    <!-- Chamando o JavaScript -->
+    <script src="assets/JavaScript/calculadora.js"></script>
+  </body>
+</html>
